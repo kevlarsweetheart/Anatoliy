@@ -26,10 +26,6 @@ Review README.md file for in-depth information about web sockets communication
 
 var mraa = require('mraa'); //require mraa
 console.log('MRAA Version: ' + mraa.getVersion()); //write the mraa version to the Intel XDK console
-//var myOnboardLed = new mraa.Gpio(3, false, true); //LED hooked up to digital pin (or built in pin on Galileo Gen1)
-var myOnboardLed = new mraa.Gpio(13); //LED hooked up to digital pin 13 (or built in pin on Intel Galileo Gen2 as well as Intel Edison)
-myOnboardLed.dir(mraa.DIR_OUT); //set the gpio direction to output
-var ledState = true; //Boolean to hold the state of Led
 
 var express = require('express');
 var app = express();
@@ -77,13 +73,11 @@ io.on('connection', function(socket) {
         console.log('message: ' + msg.value);
     });
     
-    socket.on('toogle led', function(msg) {
-        myOnboardLed.write(ledState?1:0); //if ledState is true then write a '1' (high) otherwise write a '0' (low)
-        msg.value = ledState;
-        io.emit('toogle led', msg);
-        ledState = !ledState; //invert the ledState
+    socket.on('click', function(msg) {
+        // передача нужного состояния genuino по блютузу
+        console.log('bulb\'s state changed to ' + msg.value + ' by '+msg.userId);
+        socket.emit('button pressed', msg);
     });
-    
 });
 
 

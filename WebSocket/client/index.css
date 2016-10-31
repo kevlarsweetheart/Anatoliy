@@ -76,28 +76,42 @@ body {
     font-weight: bold;
 }
 
-#led-link {
+#on_button {
     margin: 1em 1em;
-    color: pink;
+    color: greenyellow;
     font-weight: bold;
-    font-size: 5em;
+    font-size: 2em;
     border: 2px solid currentColor;
     border-radius: 5px;
 }
 
-#led-link1 {
-    position: absolute;
-    left: 5em;
-    top: 1em;
+#on_button-container {
+    margin-top: 1em;
+}
+
+#off_button {
     margin: 1em 1em;
-    color: pink;
+    color: orangered;
     font-weight: bold;
-    font-size: 5em;
+    font-size: 2em;
     border: 2px solid currentColor;
     border-radius: 5px;
 }
 
-#led-link-container {
+#off_button-container {
+    margin-top: 1em;
+}
+
+#auto_button {
+    margin: 1em 1em;
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 2em;
+    border: 2px solid currentColor;
+    border-radius: 5px;
+}
+
+#auto_button-container {
     margin-top: 1em;
 }
 

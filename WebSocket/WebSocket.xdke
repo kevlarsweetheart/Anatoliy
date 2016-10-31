@@ -29,8 +29,8 @@
         "name": "WebSocket.xdk"
       },
       "WebSocket.xdke": {
-        "previousModTime": 1477675854000,
-        "modified": 1477675854000,
+        "previousModTime": 1477948427000,
+        "modified": 1477948427000,
         "seen": true,
         "name": "WebSocket.xdke"
       },
@@ -41,8 +41,8 @@
         "name": "icon.png"
       },
       "main.js": {
-        "previousModTime": 1477090757000,
-        "modified": 1477090757000,
+        "previousModTime": 1477948441000,
+        "modified": 1477948441000,
         "seen": true,
         "name": "main.js"
       },
@@ -59,20 +59,20 @@
         "name": "websockets_client.png"
       },
       "client/index.css": {
-        "previousModTime": 1477676044000,
-        "modified": 1477676044000,
+        "previousModTime": 1477946666000,
+        "modified": 1477946666000,
         "seen": true,
         "name": "client/index.css"
       },
       "client/index.html": {
-        "previousModTime": 1477676044000,
-        "modified": 1477676044000,
+        "previousModTime": 1477948134000,
+        "modified": 1477948134000,
         "seen": true,
         "name": "client/index.html"
       },
       "client/index.js": {
-        "previousModTime": 1477676043000,
-        "modified": 1477676043000,
+        "previousModTime": 1477948407000,
+        "modified": 1477948407000,
         "seen": true,
         "name": "client/index.js"
       },
@@ -108,14 +108,8 @@
       }
     },
     "boardFileStatus": {
-      "client/index.css": {
-        "previousModTime": 1477676050521
-      },
-      "client/index.html": {
-        "previousModTime": 1477676050521
-      },
-      "client/index.js": {
-        "previousModTime": 1477676050521
+      "main.js": {
+        "previousModTime": 1477948446962
       }
     }
   }

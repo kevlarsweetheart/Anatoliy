@@ -8,24 +8,27 @@ $('form').submit(function() {
     return false;
 });
 
-$("#led-link").on('click', function(e){
-    socket.emit('toogle led', {value: 0, userId: userId});
-
+$("#on_button").on('click', function(e){
+    socket.emit('click', {value: 1, userId: userId});
 });  
 
-socket.on('toogle led', function(msg) {
-    if(msg.value === false) {
-        $('#messages').prepend($('<li>Toogle LED: OFF<span> - '+msg.userId+'</span></li>'));
-        $("#led-container").removeClass("on");
-        $("#led-container").addClass("off");
-        $("#led-container span").text("OFF");
-    }
-    else if(msg.value === true) {
-        $('#messages').prepend($('<li>Toogle LED: ON<span> - '+msg.userId+'</span></li>'));
-        $("#led-container").removeClass("off");
-        $("#led-container").addClass("on");
-        $("#led-container span").text("ON");
-    }
+$("#off_button").on('click', function(e){
+    socket.emit('click', {value: 0, userId: userId});
+});
+
+$("#auto_button").on('click', function(e){
+    socket.emit('click', {value: 2, userId: userId});
+});
+
+socket.on('button pressed', function(msg) {
+    var state = "";
+    if (msg.value === 0)
+        state = "off";
+    if (msg.value === 1)
+        state = "on";
+    if (msg.value === 2)
+        state = "auto";
+    $('#messages').prepend($('<li> bulb\'s state changed to <b>' + state + '</b><span> - '+msg.userId+'</span></li>'));
 });
 
 socket.on('chat message', function(msg) {
