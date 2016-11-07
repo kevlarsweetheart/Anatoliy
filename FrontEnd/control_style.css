@@ -51,7 +51,7 @@ header nav {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url("/img/header_back");
+  background-image: url("/img/header_back.jpg");
   color: #ffffff;
   height: 500px;
   text-shadow: 0.25px 0.25px 0.25px #000000;
@@ -68,6 +68,33 @@ header nav {
   font-weight: bold;
 }
 
+/* Styling buttons */
+#auto_button_pic {
+  height: 10rem;
+  margin-left: 22rem;
+  margin-top: 30rem;
+}
+
+#auto_button_pic:active {
+  height: 10rem;
+  margin-left: 22rem;
+  margin-top: 30rem;
+  padding-top: 5px;
+}
+
+#on_button_pic {
+  height: 20rem;
+  margin-top: 23rem;
+  margin-left: 10rem;
+}
+
+#on_button_pic:active {
+  height: 20rem;
+  margin-top: 23rem;
+  margin-left: 10rem;
+  padding-top: 5px;
+}
+
 /* Footer styling */
 footer {
   font-size: 12px;
@@ -76,4 +103,5 @@ footer {
 
 footer p {
   font-family: 'Gloria Hallelujah', cursive;
+  padding-top: 15rem;
 }
