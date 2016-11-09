@@ -35,10 +35,11 @@ var io = require('socket.io')(http);
 
 var connectedUsersArray = [];
 var userId;
+var curState = 0;
 
 app.get('/', function(req, res) {
     //Join all arguments together and normalize the resulting path.
-    res.sendFile(path.join(__dirname + '/client', 'index.html'));
+    res.sendFile(path.join(__dirname + '/client', 'control.html'));
 });
 
 //Allow use of files in client folder
@@ -74,6 +75,7 @@ io.on('connection', function(socket) {
     });
     
     socket.on('click', function(msg) {
+        curState = (curState + 1) % 2;
         // передача нужного состояния genuino по блютузу
         console.log('bulb\'s state changed to ' + msg.value + ' by '+msg.userId);
         socket.emit('button pressed', msg);

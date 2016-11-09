@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Anatoliy Smart Bulb</title>
+  <link href="/control_style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="socket.io/socket.io.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <header class = "container">
+    <div class = "row">
+      <a class = "btn btn-primary" href = "/control.html" role = "button">
+        Anatoliy
+      </a>
+      <nav class = "col-sm-8 text-right">
+        <a class = "link" href = "/control.html">control</a>
+        <a class = "link" href = "/about.html">about</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Header -->
+  <section class = "jumbotron">
+    <div class = "container">
+      <div class = "row">
+        <figure class = "col-sm-6">
+          <img src = "/img/header_pic.png">
+        </figure>
+        <div class = "row text-right">
+          <h1>Smart Bulb</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fancy buttons -->
+  <section class = "container">
+    <div class = "row">
+      <figure class = "col-sm-6">
+        <div id="on_button-container"><a id="on_button">
+          <img id = "on_button_pic" src = "/img/on_icon.png">
+        </a></div>
+      </figure>
+      <figure class = "col-sm-6">
+        <div id="auto_button-container"><a id="auto_button">
+          <img id = "auto_button_pic" src  = "/img/auto_icon.png">
+        </a></div>
+      </figure>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class = "container">
+  <div class = "row">
+    <p class = "col-sm-4">
+      &copy; 2016 Anatoliy Smart Bulb
+    </p>
+  </div>
+</footer>
+<script src = "/control.js"></script>
+</body>
