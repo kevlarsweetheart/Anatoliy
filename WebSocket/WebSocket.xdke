@@ -29,8 +29,8 @@
         "name": "WebSocket.xdk"
       },
       "WebSocket.xdke": {
-        "previousModTime": 1477948427000,
-        "modified": 1477948427000,
+        "previousModTime": 1478704460000,
+        "modified": 1478704460000,
         "seen": true,
         "name": "WebSocket.xdke"
       },
@@ -41,8 +41,8 @@
         "name": "icon.png"
       },
       "main.js": {
-        "previousModTime": 1477948441000,
-        "modified": 1477948441000,
+        "previousModTime": 1478703656000,
+        "modified": 1478703656000,
         "seen": true,
         "name": "main.js"
       },
@@ -105,11 +105,65 @@
         "modified": 1477606283000,
         "seen": true,
         "name": "client/images/on.png"
+      },
+      "client/about.html": {
+        "previousModTime": 1478702197000,
+        "modified": 1478702197000,
+        "seen": true,
+        "name": "client/about.html"
+      },
+      "client/about_style.css": {
+        "previousModTime": 1478702197000,
+        "modified": 1478702197000,
+        "seen": true,
+        "name": "client/about_style.css"
+      },
+      "client/control.html": {
+        "previousModTime": 1478704650000,
+        "modified": 1478704650000,
+        "seen": true,
+        "name": "client/control.html"
+      },
+      "client/control.js": {
+        "previousModTime": 1478704222000,
+        "modified": 1478704222000,
+        "seen": true,
+        "name": "client/control.js"
+      },
+      "client/control_style.css": {
+        "previousModTime": 1478702197000,
+        "modified": 1478702197000,
+        "seen": true,
+        "name": "client/control_style.css"
+      },
+      "client/img/auto_icon.png": {
+        "previousModTime": 1478702197000,
+        "modified": 1478702197000,
+        "seen": true,
+        "name": "client/img/auto_icon.png"
+      },
+      "client/img/header_back.jpg": {
+        "previousModTime": 1478369846000,
+        "modified": 1478369846000,
+        "seen": true,
+        "name": "client/img/header_back.jpg"
+      },
+      "client/img/header_pic.png": {
+        "previousModTime": 1478369846000,
+        "modified": 1478369846000,
+        "seen": true,
+        "name": "client/img/header_pic.png"
+      },
+      "client/img/on_icon.png": {
+        "previousModTime": 1478702197000,
+        "modified": 1478702197000,
+        "seen": true,
+        "name": "client/img/on_icon.png"
       }
     },
     "boardFileStatus": {
-      "main.js": {
-        "previousModTime": 1477948446962
+      "client/control.html": {
+        "previousModTime": 1478704655847
       }
     }
   }

@@ -1,0 +1,107 @@
+/* Navigation bar styling */
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+.btn.btn-primary {
+  font-weight: 700;
+  margin: 0;
+  font-size: 42px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: black;
+  background-color: #fff;
+  border: none;
+}
+
+.btn.btn-primary:hover {
+  color: black;
+  background-color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link {
+  padding-left: 15rem;
+  margin: 0;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  background-color: #fff;
+}
+
+.link:hover {
+  color: black;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+/* Header styling */
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url("/img/header_back.jpg");
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron img {
+  padding-top: -5rem;
+  max-height: 44rem;
+}
+
+.jumbotron h1 {
+  padding-top: 17rem;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: bold;
+}
+
+/* Styling buttons */
+#auto_button_pic {
+  height: 10rem;
+  margin-left: 22rem;
+  margin-top: 30rem;
+}
+
+#auto_button_pic:active {
+  height: 10rem;
+  margin-left: 22rem;
+  margin-top: 30rem;
+  padding-top: 5px;
+}
+
+#on_button_pic {
+  height: 20rem;
+  margin-top: 23rem;
+  margin-left: 10rem;
+}
+
+#on_button_pic:active {
+  height: 20rem;
+  margin-top: 23rem;
+  margin-left: 10rem;
+  padding-top: 5px;
+}
+
+/* Footer styling */
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer p {
+  font-family: 'Gloria Hallelujah', cursive;
+  padding-top: 15rem;
+}
